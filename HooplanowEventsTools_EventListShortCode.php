@@ -72,6 +72,8 @@ class HooplanowEventsTools_EventListShortCode extends HooplanowEventsTools_Short
 	    $i++;
 	}
 
-	return $call_str;
+	$call_str .= 'key='.get_option( 'HooplanowEventsTools_Plugin_api-key' );
+
+	return HooplanowEventsTools_Plugin::$events_apiurl . '?' . $call_str;
     }
 }

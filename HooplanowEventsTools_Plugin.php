@@ -5,6 +5,8 @@ include_once('HooplanowEventsTools_LifeCycle.php');
 
 class HooplanowEventsTools_Plugin extends HooplanowEventsTools_LifeCycle {
 
+    static $events_apiurl = 'http://events.hooplanow.com/api/v1/events.json';
+
     /**
      * See: http://plugin.michael-simpson.com/?page_id=31
      * @return array of option meta data.
